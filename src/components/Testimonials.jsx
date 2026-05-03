@@ -5,41 +5,41 @@ import { Star } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'Rajesh Kumar',
-    role: 'CEO, Tech Innovations Ltd',
-    company: 'Tech Innovations',
+    name: 'Rajesh Sharma',
+    role: 'Owner, E-commerce Store',
+    company: 'Fashion Plus',
     content:
-      'Zintrix transformed our online presence completely. Their website development team created something truly exceptional that increased our leads by 250%.',
+      'Zintrix helped us launch our online store in just 4 weeks. The e-commerce platform is fast, secure, and easy to manage. Our sales increased by 180% in the first month!',
     rating: 5,
     avatar: '👨‍💼',
     color: 'from-blue-600 to-blue-800',
   },
   {
-    name: 'Priya Sharma',
-    role: 'Marketing Director, Cafe Delights',
-    company: 'Cafe Delights',
+    name: 'Priya Singh',
+    role: 'Marketing Director, Manufacturing',
+    company: 'Industrial Solutions',
     content:
-      'The analytics dashboard they built has been a game-changer for our business. Real-time insights helped us optimize operations and reduce costs significantly.',
+      'The Power BI dashboard they created completely transformed how we track our business metrics. We now make data-driven decisions faster than ever before.',
     rating: 5,
     avatar: '👩‍💼',
     color: 'from-cyan-600 to-blue-700',
   },
   {
     name: 'Amit Patel',
-    role: 'Founder, E-Commerce Plus',
-    company: 'E-Commerce Plus',
+    role: 'Director, Service Business',
+    company: 'Plumbing Services',
     content:
-      'Professional, responsive, and results-oriented. The Zintrix team delivered on time and exceeded expectations. Highly recommended for any digital project!',
+      'Our new business website has been incredible. It looks professional and helped us get 50+ inquiries per month. Best investment for our business!',
     rating: 5,
     avatar: '👨‍💼',
     color: 'from-purple-600 to-pink-700',
   },
   {
     name: 'Neha Desai',
-    role: 'Operations Manager, Construction Co',
-    company: 'BuildRight',
+    role: 'CEO, Software Startup',
+    company: 'Tech Solutions India',
     content:
-      'Their team understood our business needs perfectly. The website showcases our projects beautifully and has helped us land major contracts.',
+      'Zintrix delivered our Excel dashboard with automation that saves us 10 hours every week. Professional, affordable, and results-driven. Highly recommended!',
     rating: 5,
     avatar: '👩‍💼',
     color: 'from-orange-600 to-red-700',

@@ -23,9 +23,9 @@ function useCounter(target, inView, duration = 2000) {
 }
 
 const stats = [
-  { icon: <Smile size={28} />, value: 50, suffix: '+', label: 'Happy Clients' },
-  { icon: <Rocket size={28} />, value: 80, suffix: '+', label: 'Projects Completed' },
-  { icon: <TrendingUp size={28} />, value: 2, suffix: '+', label: 'Years of Experience' },
+  { icon: <Smile size={28} />, value: 80, suffix: '+', label: 'Happy Clients' },
+  { icon: <Rocket size={28} />, value: 150, suffix: '+', label: 'Websites & Dashboards' },
+  { icon: <TrendingUp size={28} />, value: 3, suffix: '+', label: 'Years Excellence' },
   { icon: <Headphones size={28} />, value: 24, suffix: '/7', label: 'Client Support' },
 ]
 

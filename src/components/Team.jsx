@@ -5,9 +5,9 @@ import { Linkedin, Twitter, Mail } from 'lucide-react'
 
 const teamMembers = [
   {
-    name: 'Arun Singh',
-    role: 'Founder & Lead Developer',
-    bio: 'Full-stack developer with 8+ years in web development. Expert in React, Node.js, and cloud infrastructure.',
+    name: 'Abhishek Singh',
+    role: 'Founder & Full-Stack Developer',
+    bio: 'Full-stack developer with 6+ years building websites and dashboards for small businesses. Expert in React, Node.js, and web optimization.',
     avatar: '👨‍💻',
     color: 'from-blue-600 to-blue-800',
     socials: [
@@ -17,10 +17,10 @@ const teamMembers = [
     ],
   },
   {
-    name: 'Priya Verma',
-    role: 'Design Lead & UX Strategist',
-    bio: 'Creative designer with 6+ years experience. Specializes in user-centric design and brand identity development.',
-    avatar: '👩‍🎨',
+    name: 'Priya Sharma',
+    role: 'Data Analyst & Dashboard Developer',
+    bio: 'Specializes in converting business data into actionable insights. Expert in Power BI, Tableau, Excel automation for 4+ years.',
+    avatar: '👩‍💻',
     color: 'from-cyan-600 to-blue-700',
     socials: [
       { icon: Linkedin, url: '#' },
@@ -29,10 +29,10 @@ const teamMembers = [
     ],
   },
   {
-    name: 'Rohan Patel',
-    role: 'Analytics & Data Specialist',
-    bio: 'Data scientist with expertise in dashboards and business intelligence. 5+ years in analytics implementation.',
-    avatar: '👨‍💼',
+    name: 'Rahul Verma',
+    role: 'Web Designer & UX Developer',
+    bio: 'Creates beautiful, responsive websites that convert visitors to customers. 5+ years experience in modern web design.',
+    avatar: '👨‍🎨',
     color: 'from-purple-600 to-pink-700',
     socials: [
       { icon: Linkedin, url: '#' },
@@ -41,9 +41,9 @@ const teamMembers = [
     ],
   },
   {
-    name: 'Neha Gupta',
-    role: 'Project Manager & Client Success',
-    bio: 'Manages project delivery and client relationships. 7+ years ensuring 100% client satisfaction on all projects.',
+    name: 'Neha Patel',
+    role: 'Client Success Manager',
+    bio: 'Ensures every project exceeds expectations. Manages communication, timelines, and delivers projects that solve real business problems.',
     avatar: '👩‍💼',
     color: 'from-orange-600 to-red-700',
     socials: [

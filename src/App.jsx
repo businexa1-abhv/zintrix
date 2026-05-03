@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import DetailedServices from './components/DetailedServices'
 import Testimonials from './components/Testimonials'
 import Pricing from './components/Pricing'
 import Process from './components/Process'
@@ -11,6 +12,7 @@ import CTABanner from './components/CTABanner'
 import Portfolio from './components/Portfolio'
 import Stats from './components/Stats'
 import Footer from './components/Footer'
+import WhatsAppButton from './components/WhatsAppButton'
 
 export default function App() {
   return (
@@ -19,6 +21,7 @@ export default function App() {
       <Hero />
       <Stats />
       <Services />
+      <DetailedServices />
       <Portfolio />
       <Testimonials />
       <Pricing />
@@ -28,6 +31,7 @@ export default function App() {
       <FAQ />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }

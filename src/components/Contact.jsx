@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, CheckCircle, MessageCircle } from 'lucide-react'
 
 const contactInfo = [
   {
@@ -17,10 +17,11 @@ const contactInfo = [
     color: 'text-cyan-400',
   },
   {
-    icon: MapPin,
-    label: 'Location',
-    value: 'Bangalore, India',
-    color: 'text-purple-400',
+    icon: MessageCircle,
+    label: 'WhatsApp',
+    value: '+91 98765 43210',
+    color: 'text-green-400',
+    action: 'https://wa.me/919876543210',
   },
 ]
 
@@ -104,7 +105,18 @@ export default function Contact() {
                   <Icon size={20} />
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-1">{info.label}</h3>
-                <p className="text-gray-400">{info.value}</p>
+                {info.action ? (
+                  <a
+                    href={info.action}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-green-400 transition-colors"
+                  >
+                    {info.value}
+                  </a>
+                ) : (
+                  <p className="text-gray-400">{info.value}</p>
+                )}
               </motion.div>
             )
           })}

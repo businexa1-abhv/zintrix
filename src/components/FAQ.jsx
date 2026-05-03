@@ -5,54 +5,54 @@ import { ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
-    question: 'How long does a typical website project take?',
+    question: 'What is included in the Basic Website package?',
     answer:
-      'Our standard website projects take 4-8 weeks depending on complexity and scope. Starter packages are faster (2-3 weeks), while enterprise solutions may take longer. We work in phases and keep you updated throughout.',
+      'The Basic Website includes 5-7 pages, responsive design, basic SEO optimization, contact form, WhatsApp integration, and 1 year of free hosting. Perfect for small businesses getting started online.',
+  },
+  {
+    question: 'How does the E-commerce package work?',
+    answer:
+      'Our E-commerce solution includes product management, secure payment gateway (Razorpay/PayPal), inventory tracking, order management, and mobile-responsive design. We also provide 3 months of free support.',
+  },
+  {
+    question: 'What can I track with Power BI dashboards?',
+    answer:
+      'You can track sales, revenue, customer metrics, operational KPIs, inventory levels, team performance, and more. We customize the dashboard based on your business needs.',
+  },
+  {
+    question: 'How are Excel dashboards different from Power BI?',
+    answer:
+      'Excel dashboards are cost-effective and work within familiar tools. Power BI offers real-time data updates, automation, and advanced analytics. Choose Excel for simpler needs, Power BI for complex data analysis.',
+  },
+  {
+    question: 'What is your typical project turnaround time?',
+    answer:
+      'Basic websites take 2-3 weeks, E-commerce takes 4-6 weeks, and dashboards take 1-2 weeks depending on complexity. We provide a detailed timeline before starting.',
   },
   {
     question: 'Do you provide ongoing support and maintenance?',
     answer:
-      'Yes! All our packages include support and maintenance. Starter plans include 6 months, Professional includes 12 months, and Enterprise plans include 24/7 priority support. We handle updates, security patches, and performance optimization.',
+      'Yes! All projects include support packages. We offer monthly maintenance plans, security updates, backup services, and content updates. Custom packages available.',
   },
   {
-    question: 'What is your process for starting a project?',
+    question: 'How much will my website cost?',
     answer:
-      'We follow a structured 5-step process: 1) Discovery & Requirements, 2) Design & Planning, 3) Development, 4) Testing & QA, 5) Deployment & Training. Each phase has clear milestones and deliverables.',
+      'Pricing starts at ₹15,000 for basic websites, ₹25,000 for business websites, and ₹60,000 for e-commerce. Analytics services start at ₹10,000. Custom solutions available based on requirements.',
   },
   {
-    question: 'Can you migrate my existing website to a new platform?',
+    question: 'Can I contact you on WhatsApp?',
     answer:
-      'Absolutely! We specialize in website migrations with zero downtime. We handle data migration, URL redirects, SEO preservation, and ensure all functionality works perfectly on the new platform.',
+      'Absolutely! WhatsApp is our preferred channel for quick queries. Click the WhatsApp button on the bottom-right of the page to connect with our team instantly.',
   },
   {
-    question: 'Do you offer SEO services?',
+    question: 'Do you work with clients outside India?',
     answer:
-      'Yes, all our website packages include basic SEO setup. Professional and Enterprise plans include advanced SEO optimization with keyword research, on-page optimization, and technical SEO. We also offer dedicated SEO services separately.',
+      'Yes, we work with international clients through Upwork and direct partnerships. All communication is in English, and we handle timezone differences professionally.',
   },
   {
-    question: 'What technology stack do you use?',
+    question: 'What if I need changes after my website launches?',
     answer:
-      'We use modern, scalable technologies: React/Vue for frontends, Node.js/Python for backends, and cloud platforms like AWS/GCP. We choose the best tech for your specific needs. All code follows industry best practices.',
-  },
-  {
-    question: 'How much does analytics implementation cost?',
-    answer:
-      'Our Analytics Setup starts at ₹35,000 for basic dashboards, while Advanced Analytics with ML features is ₹85,000. Custom implementations are quoted separately based on your specific data sources and requirements.',
-  },
-  {
-    question: 'Do you provide training for our team?',
-    answer:
-      'Yes! We provide comprehensive training for your team on all platforms and tools we implement. This includes documentation, video tutorials, and live training sessions. Enterprise clients get dedicated training days.',
-  },
-  {
-    question: 'What if I need to make changes after the project is complete?',
-    answer:
-      'Changes within the support period are covered in your maintenance plan. After that, we offer hourly support (₹2,500/hour for standard work) or retainer packages. Major features can be quoted separately.',
-  },
-  {
-    question: 'How do you ensure my website is secure?',
-    answer:
-      'We implement industry-standard security: SSL/TLS encryption, secure authentication, regular security audits, DDoS protection, and automated backups. All sites get security patches and updates as part of maintenance.',
+      'We provide unlimited revisions during development and maintenance support post-launch. Our goal is your complete satisfaction with the final product.',
   },
 ]
 

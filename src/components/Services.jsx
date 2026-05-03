@@ -8,19 +8,19 @@ const services = [
     icon: <Code2 size={28} />,
     title: 'Website Development',
     description:
-      'We create fast, responsive and SEO-friendly websites that help your business stand out online. From landing pages to complex web apps.',
+      'We create fast, responsive and SEO-friendly websites tailored for small businesses. From basic websites to complete e-commerce platforms.',
     color: 'from-blue-600 to-blue-800',
     glow: 'group-hover:shadow-blue-600/30',
     tag: 'Most Popular',
   },
   {
     icon: <BarChart3 size={28} />,
-    title: 'Data Analytics',
+    title: 'Data Analytics & Dashboards',
     description:
-      'We turn your raw data into meaningful insights and interactive dashboards. Make smarter decisions backed by real numbers.',
+      'Transform your business data into actionable insights. Excel dashboards, Power BI, Tableau, and custom analytics reports for better decisions.',
     color: 'from-cyan-600 to-blue-700',
     glow: 'group-hover:shadow-cyan-600/30',
-    tag: 'Data-Driven',
+    tag: 'Business Intelligence',
   },
 ]
 
