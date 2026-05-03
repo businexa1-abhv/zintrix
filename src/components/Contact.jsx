@@ -7,7 +7,7 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'Phone',
-    value: '+91 98765 43210',
+    value: '+91 76339 54129',
     color: 'text-blue-400',
   },
   {
@@ -19,9 +19,9 @@ const contactInfo = [
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    value: '+91 98765 43210',
+    value: '+91 76339 54129',
     color: 'text-green-400',
-    action: 'https://wa.me/919876543210',
+    action: 'https://wa.me/917633954129',
   },
 ]
 
@@ -38,6 +38,7 @@ export default function Contact() {
   })
   const [submitted, setSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [submitError, setSubmitError] = useState('')
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -46,10 +47,12 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setSubmitError('')
     setIsLoading(true)
 
-    // Simulate form submission
-    setTimeout(() => {
+    const web3formsKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+
+    const resetSuccess = () => {
       setIsLoading(false)
       setSubmitted(true)
       setFormData({
@@ -60,10 +63,48 @@ export default function Contact() {
         service: 'website',
         message: '',
       })
-
-      // Reset success message after 5 seconds
       setTimeout(() => setSubmitted(false), 5000)
-    }, 1500)
+    }
+
+    if (!web3formsKey) {
+      console.warn('[Contact] Add VITE_WEB3FORMS_ACCESS_KEY in .env to receive real submissions — see https://web3forms.com')
+      setTimeout(resetSuccess, 800)
+      return
+    }
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: web3formsKey,
+          subject: `Zintrix — ${formData.service} enquiry`,
+          from_name: formData.name,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || '—',
+          company: formData.company || '—',
+          service: formData.service,
+          message: formData.message,
+        }),
+      })
+      const data = await res.json()
+      if (data.success) {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'contact_submit', {
+            event_category: 'lead',
+            event_label: formData.service,
+          })
+        }
+        resetSuccess()
+      } else {
+        setIsLoading(false)
+        setSubmitError(data.message || 'Something went wrong. Please try again or use WhatsApp.')
+      }
+    } catch {
+      setIsLoading(false)
+      setSubmitError('Could not send. Check your connection or try WhatsApp.')
+    }
   }
 
   return (
@@ -192,7 +233,7 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 bg-dark-800/60 border border-blue-900/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 76339 54129"
                     />
                   </div>
 
@@ -240,6 +281,12 @@ export default function Contact() {
                     placeholder="Tell us about your project..."
                   />
                 </div>
+
+                {submitError && (
+                  <p className="text-sm text-red-400 bg-red-950/40 border border-red-900/50 rounded-lg px-4 py-3" role="alert">
+                    {submitError}
+                  </p>
+                )}
 
                 {/* Submit Button */}
                 <motion.button
