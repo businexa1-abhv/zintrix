@@ -5,10 +5,10 @@ import { Linkedin, Twitter, Mail } from 'lucide-react'
 
 const teamMembers = [
   {
-    name: 'Abhishek Singh',
-    role: 'Founder & Full-Stack Developer',
-    bio: 'Full-stack developer with 6+ years building websites and dashboards for small businesses. Expert in React, Node.js, and web optimization.',
-    avatar: '👨‍💻',
+    name: 'Swambhavi',
+    role: 'Data Analytics Specialist',
+    bio: 'Data analytics professional with 5 years of experience delivering actionable insights and business-focused reporting.',
+    avatar: '👩‍💻',
     color: 'from-blue-600 to-blue-800',
     socials: [
       { icon: Linkedin, url: '#' },
@@ -17,35 +17,11 @@ const teamMembers = [
     ],
   },
   {
-    name: 'Priya Sharma',
-    role: 'Data Analyst & Dashboard Developer',
-    bio: 'Specializes in converting business data into actionable insights. Expert in Power BI, Tableau, Excel automation for 4+ years.',
-    avatar: '👩‍💻',
+    name: 'Harsha Vardhan Kokollu',
+    role: 'Fullstack Developer',
+    bio: 'Fullstack developer with 8+ years of experience building modern, scalable web applications end to end.',
+    avatar: '👨‍💻',
     color: 'from-cyan-600 to-blue-700',
-    socials: [
-      { icon: Linkedin, url: '#' },
-      { icon: Twitter, url: '#' },
-      { icon: Mail, url: '#' },
-    ],
-  },
-  {
-    name: 'Rahul Verma',
-    role: 'Web Designer & UX Developer',
-    bio: 'Creates beautiful, responsive websites that convert visitors to customers. 5+ years experience in modern web design.',
-    avatar: '👨‍🎨',
-    color: 'from-purple-600 to-pink-700',
-    socials: [
-      { icon: Linkedin, url: '#' },
-      { icon: Twitter, url: '#' },
-      { icon: Mail, url: '#' },
-    ],
-  },
-  {
-    name: 'Neha Patel',
-    role: 'Client Success Manager',
-    bio: 'Ensures every project exceeds expectations. Manages communication, timelines, and delivers projects that solve real business problems.',
-    avatar: '👩‍💼',
-    color: 'from-orange-600 to-red-700',
     socials: [
       { icon: Linkedin, url: '#' },
       { icon: Twitter, url: '#' },
@@ -129,7 +105,7 @@ export default function Team() {
         </motion.div>
 
         {/* Team Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {teamMembers.map((member, i) => (
             <TeamMemberCard key={member.name} member={member} index={i} />
           ))}
