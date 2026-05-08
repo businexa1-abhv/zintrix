@@ -15,7 +15,7 @@ function ProjectCard({ project, index }) {
       className="group relative rounded-xl overflow-hidden border border-blue-900/20 hover:border-blue-700/40 transition-all duration-400 hover:-translate-y-2"
       style={{ background: project.color }}
     >
-      <Link to={`/projects/${project.slug}`} aria-label={`Open ${project.title} case study`} className="absolute inset-0 z-10" />
+      <Link to={project.route} aria-label={`Open ${project.title} case study`} className="absolute inset-0 z-10" />
       {/* Mockup area */}
       <div className="relative h-44 overflow-hidden flex items-center justify-center" style={{ background: project.color }}>
         {/* Fake UI mockup */}
