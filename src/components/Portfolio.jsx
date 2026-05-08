@@ -28,7 +28,7 @@ function ProjectCard({ project, index }) {
               <div className="w-2 h-2 rounded-full bg-green-400/60" />
             </div>
             <div className="flex-1 bg-black/20 rounded text-center">
-              <span className="text-[7px] text-white/30">zintrix.in/{project.slug}</span>
+              <span className="text-[7px] text-white/30">zintrix-web.vercel.app/{project.slug}</span>
             </div>
           </div>
 

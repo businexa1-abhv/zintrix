@@ -1,3 +1,5 @@
+const BASE_URL = 'https://zintrix-web.vercel.app'
+
 export const projects = [
   {
     title: 'Coffee Shop Website',
@@ -8,8 +10,8 @@ export const projects = [
     accent: '#d97706',
     icon: '☕',
     desc: 'Modern website for local cafe - 40% increase in online orders',
-    liveUrl: 'https://zintrix-web.vercel.app/',
-    appUrl: 'https://zintrix.in/coffee-shop',
+    liveUrl: `${BASE_URL}/`,
+    appUrl: `${BASE_URL}/coffee-shop`,
     summary:
       'A conversion-focused website for a neighborhood cafe featuring online ordering, menu highlights, and mobile-first design.',
   },
@@ -22,8 +24,8 @@ export const projects = [
     accent: '#a78bfa',
     icon: '🛍️',
     desc: 'Full-featured online store with payment gateway and inventory',
-    liveUrl: 'https://zintrix-web.vercel.app/',
-    appUrl: 'https://zintrix.in/e-commerce-platform',
+    liveUrl: `${BASE_URL}/`,
+    appUrl: `${BASE_URL}/e-commerce-platform`,
     summary:
       'A scalable online store with secure checkout, product catalog management, and inventory tracking for smooth operations.',
   },
@@ -36,8 +38,8 @@ export const projects = [
     accent: '#38bdf8',
     icon: '📊',
     desc: 'Real-time sales tracking and performance metrics with Power BI',
-    liveUrl: 'https://zintrix-web.vercel.app/',
-    appUrl: 'https://zintrix.in/sales-analytics-dashboard',
+    liveUrl: `${BASE_URL}/`,
+    appUrl: `${BASE_URL}/sales-analytics-dashboard`,
     summary:
       'A real-time analytics dashboard built for sales teams to monitor trends, targets, and daily business performance.',
   },
@@ -50,8 +52,8 @@ export const projects = [
     accent: '#f59e0b',
     icon: '🏢',
     desc: 'Professional portfolio website with case studies and contact forms',
-    liveUrl: 'https://zintrix-web.vercel.app/',
-    appUrl: 'https://zintrix.in/business-website',
+    liveUrl: `${BASE_URL}/`,
+    appUrl: `${BASE_URL}/business-website`,
     summary:
       'A professional business site designed to present services, success stories, and lead capture with polished branding.',
   },
@@ -64,8 +66,8 @@ export const projects = [
     accent: '#34d399',
     icon: '📈',
     desc: 'Executive dashboard for monitoring KPIs and growth metrics',
-    liveUrl: 'https://zintrix-web.vercel.app/',
-    appUrl: 'https://zintrix.in/revenue-dashboard',
+    liveUrl: `${BASE_URL}/`,
+    appUrl: `${BASE_URL}/revenue-dashboard`,
     summary:
       'An executive KPI dashboard that helps leaders track revenue growth, profitability, and strategic performance indicators.',
   },
