@@ -14,6 +14,12 @@ export const projects = [
     appUrl: `${BASE_URL}/coffee-shop`,
     summary:
       'A conversion-focused website for a neighborhood cafe featuring online ordering, menu highlights, and mobile-first design.',
+    highlights: ['40% increase in online orders', 'Mobile-optimized menu browsing', 'Fast, conversion-focused landing sections'],
+    metrics: [
+      { label: 'Order Growth', value: '40%' },
+      { label: 'Load Speed', value: '< 2s' },
+      { label: 'Mobile UX', value: 'A+' },
+    ],
   },
   {
     title: 'E-Commerce Platform',
@@ -28,6 +34,12 @@ export const projects = [
     appUrl: `${BASE_URL}/e-commerce-platform`,
     summary:
       'A scalable online store with secure checkout, product catalog management, and inventory tracking for smooth operations.',
+    highlights: ['Secure checkout and payment flow', 'Inventory sync across products', 'Scalable storefront architecture'],
+    metrics: [
+      { label: 'Checkout Steps', value: '3' },
+      { label: 'Catalog Size', value: '1000+' },
+      { label: 'Uptime', value: '99.9%' },
+    ],
   },
   {
     title: 'Sales Analytics Dashboard',
@@ -42,6 +54,12 @@ export const projects = [
     appUrl: `${BASE_URL}/sales-analytics-dashboard`,
     summary:
       'A real-time analytics dashboard built for sales teams to monitor trends, targets, and daily business performance.',
+    highlights: ['Live KPIs and trend analysis', 'Power BI powered insights', 'Executive-ready reporting views'],
+    metrics: [
+      { label: 'Data Freshness', value: 'Realtime' },
+      { label: 'KPIs Tracked', value: '50+' },
+      { label: 'Decision Speed', value: 'Faster' },
+    ],
   },
   {
     title: 'Business Website',
@@ -56,6 +74,12 @@ export const projects = [
     appUrl: `${BASE_URL}/business-website`,
     summary:
       'A professional business site designed to present services, success stories, and lead capture with polished branding.',
+    highlights: ['Professional brand storytelling', 'Case-study-led conversion pages', 'Integrated lead capture forms'],
+    metrics: [
+      { label: 'Lead Forms', value: 'Smart' },
+      { label: 'SEO Score', value: 'High' },
+      { label: 'Design Quality', value: 'Premium' },
+    ],
   },
   {
     title: 'Revenue Dashboard',
@@ -70,6 +94,12 @@ export const projects = [
     appUrl: `${BASE_URL}/revenue-dashboard`,
     summary:
       'An executive KPI dashboard that helps leaders track revenue growth, profitability, and strategic performance indicators.',
+    highlights: ['Board-level KPI monitoring', 'Revenue trend forecasting visuals', 'Actionable executive snapshots'],
+    metrics: [
+      { label: 'KPI Visibility', value: '360°' },
+      { label: 'Forecast Window', value: '12 mo' },
+      { label: 'Clarity', value: 'Executive' },
+    ],
   },
 ]
 
