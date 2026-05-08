@@ -1,50 +1,9 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { ExternalLink } from 'lucide-react'
-
-const projects = [
-  {
-    title: 'Coffee Shop Website',
-    category: 'Website Development',
-    color: '#7c3f1e',
-    accent: '#d97706',
-    icon: '☕',
-    desc: 'Modern website for local cafe - 40% increase in online orders',
-  },
-  {
-    title: 'E-Commerce Platform',
-    category: 'Website Development',
-    color: '#1a1a2e',
-    accent: '#a78bfa',
-    icon: '🛍️',
-    desc: 'Full-featured online store with payment gateway and inventory',
-  },
-  {
-    title: 'Sales Analytics Dashboard',
-    category: 'Data Analytics',
-    color: '#0a1628',
-    accent: '#38bdf8',
-    icon: '📊',
-    desc: 'Real-time sales tracking and performance metrics with Power BI',
-  },
-  {
-    title: 'Business Website',
-    category: 'Website Development',
-    color: '#1c2d1c',
-    accent: '#f59e0b',
-    icon: '🏢',
-    desc: 'Professional portfolio website with case studies and contact forms',
-  },
-  {
-    title: 'Revenue Dashboard',
-    category: 'Data Analytics',
-    color: '#0d1117',
-    accent: '#34d399',
-    icon: '📈',
-    desc: 'Executive dashboard for monitoring KPIs and growth metrics',
-  },
-]
+import { projects } from '../data/projects'
 
 function ProjectCard({ project, index }) {
   return (
@@ -53,9 +12,10 @@ function ProjectCard({ project, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group relative rounded-xl overflow-hidden border border-blue-900/20 hover:border-blue-700/40 transition-all duration-400 hover:-translate-y-2 cursor-pointer"
+      className="group relative rounded-xl overflow-hidden border border-blue-900/20 hover:border-blue-700/40 transition-all duration-400 hover:-translate-y-2"
       style={{ background: project.color }}
     >
+      <Link to={`/projects/${project.slug}`} aria-label={`Open ${project.title} case study`} className="absolute inset-0 z-10" />
       {/* Mockup area */}
       <div className="relative h-44 overflow-hidden flex items-center justify-center" style={{ background: project.color }}>
         {/* Fake UI mockup */}
@@ -68,7 +28,7 @@ function ProjectCard({ project, index }) {
               <div className="w-2 h-2 rounded-full bg-green-400/60" />
             </div>
             <div className="flex-1 bg-black/20 rounded text-center">
-              <span className="text-[7px] text-white/30">zintrix.in/{project.title.toLowerCase().replace(' ', '-')}</span>
+              <span className="text-[7px] text-white/30">zintrix.in/{project.slug}</span>
             </div>
           </div>
 
@@ -139,12 +99,15 @@ export default function Portfolio() {
           transition={{ delay: 0.5 }}
           className="text-center"
         >
-          <button className="group px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/40 hover:-translate-y-0.5 inline-flex items-center gap-2">
+          <Link
+            to="/projects"
+            className="group px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/40 hover:-translate-y-0.5 inline-flex items-center gap-2"
+          >
             View All Projects
             <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>
